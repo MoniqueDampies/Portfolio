@@ -1,0 +1,40 @@
+{
+    "AboutArray": [
+        // {
+        //     "id": "1",
+        //     "icon": "https://i.postimg.cc/4dLr3rG1/icons8-wireframe-display-modes-96.png",
+        //     "title": "Web Design",
+        //     "text": "My time with web design and development started fairly recently but my interest for it goes back to as far as I can recall. My passion for web design stems from my love of art in general and seeing well designed websites is one of my favorite things."
+        // },
+        // {
+        //     "id": "2",
+        //     "icon": "https://i.postimg.cc/pdxNcfkK/icons8-programming-96.png",
+        //     "title": "Web development",
+        //     "text": "Web development is something perfectly crafted or a person like me that is very maticulous and loves a challenge. These aspects are what fuel my passion for coding."
+        // },
+        // {
+        //     "id": "3",
+        //     "icon": "https://i.postimg.cc/gJkCmGCJ/icons8-web-96.png",
+        //     "title": "UI & UX",
+        //     "text": "I believe that paying attention to user interface and user experience is what will make the person viewing your web page have a better experience overall. Tools Ive used to refine the UI/UX of my projects is Figma designing software."
+        // },
+        // {
+        //     "id": "4",
+        //     "icon": "https://i.postimg.cc/FsMX35LW/icons8-microsoft-paint-96.png",
+        //     "title": "Graphic Design",
+        //     "text": "My graphic design skills allow me to design websites from an artistic perspective with the goal of a visually satisfying outcome. I'm a very creative individual who has a passion for combining art with technology."
+        // },
+        // {
+        //     "id": "5",
+        //     "icon": "https://i.postimg.cc/3J4HkJd0/icons8-3d-printer-96.png",
+        //     "title": "3D printing",
+        //     "text": "During a prior course I gained experience with Flashforge 3D printing software and Flashprint Adventurer 3 printers. 3D printing allows me to be creative and solve fun problems along the way."
+        // },
+        // {
+        //     "id": "6",
+        //     "icon": "https://i.postimg.cc/YSx55vyZ/icons8-unsplash-96.png",
+        //     "title": "Photography",
+        //     "text": "Another creative passion of mine includes photography because I love capturing memories and special moments. Photography and art in general inspires me when I create websites."
+        // }
+    ]
+}
