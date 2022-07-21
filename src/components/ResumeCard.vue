@@ -6,8 +6,8 @@
                     <div class="row main center">
                         <div class="box center col-md-6 col-lg-4 col-sm-12" v-for="item of ResumeArray" :key="item.id">
                             <img class="resume-image w-25" :src="item.icon" :alt="item.name">
-                            <p>{{ item.year }}</p>
-                            <p>{{ item.name }}</p>
+                            <h4>{{ item.year }}</h4>
+                            <h5>{{ item.name }}</h5>
                             <p>{{ item.text }}</p>
                         </div>
                     </div>
@@ -70,9 +70,14 @@ export default {
     margin-top: 5rem;
 }
 
+
+.w-25{
+    width: 8rem !important;
+}
+
 #timeline-sec {
-    width: 80rem;
-    height: 60rem;
+    /* width: 85rem; */
+    height: 50rem;
     padding: 2rem;
     margin-top: 2rem;
     padding-top: 5rem;
@@ -92,14 +97,17 @@ export default {
 }
 
 .box {
-    width: 30rem;
-    height: 30rem;
+    width: 37rem;
+    gap: 1rem;
+    height: 25rem;
+    padding: 2rem;
     background: linear-gradient(145deg, #E5E6E6, #FFFFFF);
     box-shadow: 10px 10px 10px #E5E6E6,
         -10px -10px 10px #FFFFFF;
     margin: 10px;
     flex-direction: column;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
     border-radius: 15px;
     position: relative;
     transition: all .4s;
@@ -114,6 +122,13 @@ export default {
 
 img {
     border-radius: 15px;
+    box-shadow: -1px 4px 35px -3px rgba(0,0,0,0.62);
+-webkit-box-shadow: -1px 4px 35px -3px rgba(0,0,0,0.62);
+-moz-box-shadow: -1px 4px 35px -3px rgba(0,0,0,0.62);
+}
+
+.row{
+    gap: 4rem;
 }
 
 
@@ -123,7 +138,7 @@ img {
     top: 50px;
     left: 20px;
     width: 5px;
-    height: 350px;
+    height: 300px;
     color: white;
     border-radius: 50px;
     transition: all .6s;
@@ -145,7 +160,7 @@ img {
 }
 
 .box p,
-h1,
+h4, h5,
 img {
     margin: 5px 50px;
     z-index: 100;

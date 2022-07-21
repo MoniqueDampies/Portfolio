@@ -18,7 +18,7 @@
     </section>
 
 
-    <section id="AboutSection" class="container">
+    <section id="About" class="container">
         <div id="row" class="row justify-content-center">
             <div class="col-md-6 col-sm-12 text-center img-fluid">
                 <img class="profile-image rounded-pill" src="../assets/myprofile-removebg.png" alt="my picture" />
@@ -274,7 +274,7 @@ export default {
     margin-top: -5rem;
 }
 
-#AboutSection {
+#About {
     min-height: 50vh;
     padding: 1rem;
     margin: 2rem;

@@ -4,7 +4,7 @@
             <div class="col-sm-12">
                 <div class="owl-carousel" ref="owl">
                     <div id="test-card" class="testi-content" v-for="item of TestimonialsArray" :key="item.id">
-                        <img :src="item.image" :alt="item.name">
+                        <img class="testi-pic" :src="item.image" :alt="item.name">
                         <h4>{{ item.name }}</h4>
                         <h5>{{ item.title }}</h5>
                         <h6>{{ item.text }}</h6>
@@ -111,6 +111,10 @@ export default {
     background-color: #111;
 }
 
+.testi-pic{
+    width: 5rem;
+}
+
 .testi-content {
     background-color: #111;
     background: #0c0b0b;
@@ -163,7 +167,7 @@ export default {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    /* width: 30% !important; */
     border-radius: 10px;
     margin-bottom: 10px;
     padding: 1rem;

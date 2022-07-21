@@ -15,7 +15,7 @@
                             <a class="nav-link mb-0 h5 " href="#master">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mb-0 h5 " href="#about">About</a>
+                            <a class="nav-link mb-0 h5 " href="#About">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mb-0 h5 " href="#resume">Resume</a>

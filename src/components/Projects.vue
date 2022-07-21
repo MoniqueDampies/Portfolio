@@ -228,19 +228,19 @@ html {
 .projects-card:hover .project-load-bar {
     display: flex;
     transition: opacity 1s ease;
-    animation: project-load-animation 2s ease .1s forwards;
+    animation: project-load-animation 1s ease .1s forwards;
 }
 
 .projects-card:hover .project-short-desc {
     display: flex;
     transition: opacity 1s ease;
-    animation: project-infos-animation 1s ease .8s forwards;
+    animation: project-infos-animation .4s ease .4s forwards;
 }
 
 .projects-card:hover .project-btn {
     display: flex;
     transition: opacity 1s ease;
-    animation: project-infos-animation 1s ease .8s forwards;
+    animation: project-infos-animation .4s ease .4s forwards;
 }
 
 
