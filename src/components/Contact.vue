@@ -2,7 +2,7 @@
     <section id="contact" class="section p-0px-b contact-section">
         <div class="container pt-1">
             <div class="row justify-content-center m-60px-b md-m-40px-b">
-                <div class="col-12 col-md-10 col-lg-7">
+                <div class="col-sm-12 col-md-10 col-lg-7">
                     <div class="section-title text-center text-black">
                         <h2 class="contact-text text-black">Contact Me</h2>
                     </div>
@@ -22,16 +22,18 @@
                     aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <!-- SECTION LINE DIVIDER -->
-            <div class="contact-us-box" >
-                <div class="row no-gutters">
-                    <div class="col-md-6">
+            <div class="contact-us-box container" >
+                <div class="row no-gutters ">
+                    <div class="col-md-6 col-sm-5 ">
                         <div class="contact-info-box">
                             <h2>Lets get in touch</h2>
                             <p class="desc">
                                 Reach out to me through the following channels or send me a
                                 message and I will get back to you as soon as possible.
                             </p>
-                            <div class="contact-info">
+                            <div class="container">
+                                <div class="row">
+  <div class="contact-info col-sm-7 col-md-12">
                                 <a href="https://www.google.com/maps/place/Mitchells+Plain,+Cape+Town/@-34.0484419,18.602939,13z/data=!3m1!4b1!4m5!3m4!1s0x1dcc4721e60ec221:0xd3097704b4edb9ac!8m2!3d-34.0485946!4d18.6056873"
                                     target="_blank">
                                     <i class="icon theme-bg ti-direction">
@@ -40,15 +42,16 @@
                                 </a>
                                 <p>Mitchells Plain, Cape Town, 7785.</p>
                             </div>
-                            <div class="contact-info">
+                            <div class="contact-info col-sm-7 col-md-12">
                                 <a href="mailto:moniquedampies1861@gmail.com">
                                     <i class="icon theme-bg ti-email">
                                         <img src="https://img.icons8.com/nolan/64/email-sign.png" />
                                     </i>
                                 </a>
-                                <p>moniquedampies1861@gmail.com<br /></p>
+                                <p>moniquedampies1861</p>
+                                <p>@gmail.com</p>
                             </div>
-                            <div class="contact-info">
+                            <div class="contact-info col-sm-7 col-md-12">
                                 <a href="tel:0638729906" target="_blank">
                                     <i class="icon theme-bg ti-mobile">
                                         <img src="https://img.icons8.com/nolan/64/phone.png" />
@@ -56,7 +59,7 @@
                                 </a>
                                 <p>063 872 9906</p>
                             </div>
-                            <div class="contact-info">
+                            <div class="contact-info col-sm-7 col-md-12">
                                 <a href="https://github.com/MoniqueDampies" target="_blank">
                                     <i class="icon theme-bg ti-direction">
                                         <img src="https://img.icons8.com/nolan/64/github.png" />
@@ -64,7 +67,7 @@
                                 </a>
                                 <p>Github</p>
                             </div>
-                            <div class="contact-info">
+                            <div class="contact-info col-sm-7 col-md-12">
                                 <a href="https://codepen.io/MoniqueDampies" target="_blank">
                                     <i class="icon theme-bg ti-direction">
                                         <img src="https://i.postimg.cc/gjWGZZk4/icons8-codepen-50.png" />
@@ -72,9 +75,12 @@
                                 </a>
                                 <p>CodePen</p>
                             </div>
+                                </div>
+                            </div>
+                          
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-5">
                         <!-- Contact Form -->
                         <div class="contact-form">
                             <h2>Message me</h2>
@@ -154,7 +160,7 @@ export default {
 }
 
 .contact-info-box .desc {
-    width: 350px;
+    width: 400px;
     max-width: 100%;
     margin-bottom: 40px;
 }
@@ -318,5 +324,37 @@ export default {
 }
 
 /***************** END OF contact *************************/
+
+@media only screen and (max-width: 768px) { 
+.contact-us-box {
+    position: relative;
+    left: -4rem;
+    width: 18rem;
+     margin: 0;
+     padding: 0;
+}
+
+.contact-text{
+    width: 14rem;
+    position: relative;
+}
+}
+
+@media only screen and (max-width: 338px){
+    .contact-us-box {
+    position: relative;
+    left: -1rem;
+    width: 18rem;
+    margin: 0;
+    padding: 0;
+}
+
+    .contact-info-box{
+        position: relative;
+        left: 1rem;
+        right: 1rem;
+        padding: .1rem;
+    }
+}
 
 </style>

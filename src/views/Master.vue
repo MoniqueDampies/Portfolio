@@ -1,9 +1,9 @@
 <template>
     <section id="master">
         <div class="container">
-            <div class="row justify-content-center text-center d-flex flex-wrap">
+            <div class="row justify-content-center text-center">
                 <div class="col-sm-12 col-md-8">
-                    <h5 class="font-alt ">Hello, I'm Monique</h5>
+                    <h5 class="font-alt col-sm-12">Hello, I'm Monique</h5>
                     <p class="home-text text-white">
                         I'm an aspiring web developer based in Cape Town. I create
                         websites with a focus on UI and UX.
@@ -16,27 +16,27 @@
             </div>
         </div>
     </section>
-
-
+    <!-- About Section -->
     <section id="About" class="container">
         <div id="row" class="row justify-content-center">
-            <div class="col-md-6 col-sm-12 text-center img-fluid">
-                <img class="profile-image rounded-pill" src="../assets/myprofile-removebg.png" alt="my picture" />
+            <div class="col-md-6 col-sm-12 mt-2 text-center img-fluid">
+                <img class="profile-image rounded-pill" src="https://i.postimg.cc/8CDxpCcs/myprofile-removebg.png"
+                    alt="my picture" />
             </div>
-            <div class="col-md-6 col-sm-12 about-pad pt-4">
+            <div id="aboutText" class="col-md-6 col-sm-12 about-pad pt-4">
                 <div class="about-left">
                     <h2 class="h1">I'm Monique Dampies</h2>
-                    <h3 class="text-black">
+                    <h3 class="text-black mx-1">
                         An aspiring web developer based in Cape Town
                     </h3>
-                    <p class="h5">
+                    <p class="h4">
                         Welcome to my digital portfolio! I'm happy you're here :)
                     </p>
-                    <p class="h6">
+                    <p class="h3">
                         Here you can get to know me a little more and watch my growth as a
-                        young aspiring developer from Cape Town.
+                        young aspiring developer.
                     </p>
-                    <p class="h6">
+                    <p class="h3">
                         While you are here don't forget to check out some of my
                         <a class="m-btn-link theme-after" href="#projects"> Projects. </a>
                     </p>
@@ -47,7 +47,6 @@
             </div>
         </div>
     </section>
-
     <section id="AboutCards">
         <div class="container">
             <div class="row">
@@ -55,108 +54,33 @@
             </div>
         </div>
     </section>
+    <!-- Skills Section -->
     <!-- SECTION HEADING -->
     <div class="row justify-content-center m-60px-b md-m-40px-b">
-        <div class="col-12 col-md-10 col-lg-7">
+        <div class="col-sm-12 col-md-10 col-lg-7">
             <div class="section-title text-center text-black">
-                <h2 class="contact-text text-black">Skills</h2>
+                <h2 class="contact-text text-black mt-4">My Skills</h2>
             </div>
         </div>
     </div>
-    <!-- SECTION LINE DIVIDER -->
-    <div class="progress" style="height: 3px;">
-        <div class="progress-bar bg-transparent" role="progressbar" style="width: 0%" aria-valuenow="15"
-            aria-valuemin="0" aria-valuemax="100"></div>
-        <div class="progress-bar bg-transparent" role="progressbar" style="width: 0%" aria-valuenow="30"
-            aria-valuemin="0" aria-valuemax="100"></div>
-        <div class="progress-bar bg-transparent " role="progressbar" style="width: 10%" aria-valuenow="20"
-            aria-valuemin="0" aria-valuemax="100"></div>
-        <div class="progress-bar bg-transparent" role="progressbar" style="width: 0%" aria-valuenow="20"
-            aria-valuemin="0" aria-valuemax="100"></div>
-        <div class="progress-bar bg-transparent" role="progressbar" style="width: 0%" aria-valuenow="20"
-            aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-    <!-- SECTION LINE DIVIDER -->
     <section id="SkillSection">
-        <div id="skill-bars" class="container-fluid">
-            <div class="row my-5 justify-content-center px-5 mx-5 text-white">
-                <div class="col-md-4 text-white">
-                    <br />
-                    <h3>HTML</h3>
-                    <div class="skill-progress">
-                        <div class="skill-progress-bar w-75 bg-dark">75%</div>
-                    </div>
-                    <br />
-                    <h3>CSS</h3>
-                    <div class="skill-progress">
-                        <div class="skill-progress-bar w-50 bg-dark">50%</div>
-                    </div>
-                    <br />
-                    <h3>Bootstrap</h3>
-                    <div class="skill-progress">
-                        <div class="skill-progress-bar w-50 bg-dark">50%</div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <br />
-                    <h3>Blender</h3>
-                    <div class="skill-progress">
-                        <div class="skill-progress-bar w-25 bg-dark">25%</div>
-                    </div>
-                    <br />
-                    <h3>Flashforge</h3>
-                    <div class="skill-progress">
-                        <div class="skill-progress-bar w-75 bg-dark">75%</div>
-                    </div>
-                    <br />
-                    <h3>Unreal Engine</h3>
-                    <div class="skill-progress">
-                        <div class="skill-progress-bar w-25 bg-dark">25%</div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <br />
-                    <h3>Figma</h3>
-                    <div class="skill-progress">
-                        <div class="skill-progress-bar w-50 bg-dark">50%</div>
-                    </div>
-                    <br />
-                    <h3>Snapseed</h3>
-                    <div class="skill-progress">
-                        <div class="skill-progress-bar w-75 bg-dark">75%</div>
-                    </div>
-                    <br />
-                    <h3>Lightroom</h3>
-                    <div class="skill-progress">
-                        <div class="skill-progress-bar w-75 bg-dark">75%</div>
-                    </div>
-                </div>
+        <div id="skill-bars" class="container">
+            <div class="row" style="height: 40rem; position: relative; bottom: 5rem;">
+                <Skills />
             </div>
         </div>
     </section>
-
+    <!-- Testimonials Section -->
     <!-- SECTION HEADING -->
-    <div class="row justify-content-center m-60px-b md-m-40px-b">
-        <div class="col-12 col-md-10 col-lg-7">
-            <div class="section-title text-center text-black">
-                <h2 class="contact-text text-black">Testimonials</h2>
+    <div class="container">
+        <div class="row justify-content-center m-60px-b md-m-40px-b">
+            <div class="col-12 col-md-10 col-lg-7">
+                <div class="section-title text-center text-black">
+                    <h2 class="contact-text test-text text-black mb-5">Testimonials</h2>
+                </div>
             </div>
         </div>
     </div>
-    <!-- SECTION LINE DIVIDER -->
-    <div class="progress" style="height: 3px;">
-        <div class="progress-bar bg-transparent" role="progressbar" style="width: 0%" aria-valuenow="15"
-            aria-valuemin="0" aria-valuemax="100"></div>
-        <div class="progress-bar bg-transparent" role="progressbar" style="width: 0%" aria-valuenow="30"
-            aria-valuemin="0" aria-valuemax="100"></div>
-        <div class="progress-bar bg-transparent " role="progressbar" style="width: 10%" aria-valuenow="20"
-            aria-valuemin="0" aria-valuemax="100"></div>
-        <div class="progress-bar bg-transparent" role="progressbar" style="width: 0%" aria-valuenow="20"
-            aria-valuemin="0" aria-valuemax="100"></div>
-        <div class="progress-bar bg-transparent" role="progressbar" style="width: 0%" aria-valuenow="20"
-            aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-    <!-- SECTION LINE DIVIDER -->
     <section id="TestimonialSection">
         <div class="container">
             <div class="row">
@@ -164,28 +88,14 @@
             </div>
         </div>
     </section>
-
-    <div class="row justify-content-center m-60px-b md-m-40px-b">
-        <div class="col-12 col-md-10 col-lg-7">
+    <!-- Resume Section -->
+    <div id="resume" class="row justify-content-center m-60px-b md-m-40px-b">
+        <div class="col-sm-12 col-md-10 col-lg-7">
             <div class="section-title text-center text-black">
-                <h2 class="contact-text text-black mt-5">Resume</h2>
+                <h2 class="contact-text text-black mt-5">My Resume</h2>
             </div>
         </div>
     </div>
-    <!-- SECTION LINE DIVIDER -->
-    <div class="progress" style="height: 3px;">
-        <div class="progress-bar bg-transparent" role="progressbar" style="width: 0%" aria-valuenow="15"
-            aria-valuemin="0" aria-valuemax="100"></div>
-        <div class="progress-bar bg-transparent" role="progressbar" style="width: 0%" aria-valuenow="30"
-            aria-valuemin="0" aria-valuemax="100"></div>
-        <div class="progress-bar bg-transparent " role="progressbar" style="width: 10%" aria-valuenow="20"
-            aria-valuemin="0" aria-valuemax="100"></div>
-        <div class="progress-bar bg-transparent" role="progressbar" style="width: 0%" aria-valuenow="20"
-            aria-valuemin="0" aria-valuemax="100"></div>
-        <div class="progress-bar bg-transparent" role="progressbar" style="width: 0%" aria-valuenow="20"
-            aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-    <!-- SECTION LINE DIVIDER -->
     <section id="ResumeCard">
         <div class="container">
             <div class="row Resumerow">
@@ -193,28 +103,14 @@
             </div>
         </div>
     </section>
-
-    <div class="row justify-content-center m-60px-b md-m-40px-b">
+    <!-- Projects Section -->
+    <div id="projects" class="row justify-content-center m-60px-b md-m-40px-b">
         <div class="col-12 col-md-10 col-lg-7">
             <div class="section-title text-center text-black">
-                <h2 class="contact-text text-black mt-5">My Projects</h2>
+                <h2 class="contact-text text-black mt-5 mb-3">My Projects</h2>
             </div>
         </div>
     </div>
-    <!-- SECTION LINE DIVIDER -->
-    <div class="progress" style="height: 3px;">
-        <div class="progress-bar bg-transparent" role="progressbar" style="width: 0%" aria-valuenow="15"
-            aria-valuemin="0" aria-valuemax="100"></div>
-        <div class="progress-bar bg-transparent" role="progressbar" style="width: 0%" aria-valuenow="30"
-            aria-valuemin="0" aria-valuemax="100"></div>
-        <div class="progress-bar bg-transparent " role="progressbar" style="width: 10%" aria-valuenow="20"
-            aria-valuemin="0" aria-valuemax="100"></div>
-        <div class="progress-bar bg-transparent" role="progressbar" style="width: 0%" aria-valuenow="20"
-            aria-valuemin="0" aria-valuemax="100"></div>
-        <div class="progress-bar bg-transparent" role="progressbar" style="width: 0%" aria-valuenow="20"
-            aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-    <!-- SECTION LINE DIVIDER -->
     <section id="ProjectCard">
         <div class="container">
             <div class="row">
@@ -223,7 +119,7 @@
         </div>
 
     </section>
-
+    <!-- Contact Section -->
     <section id="Contact">
         <div class="container">
             <div class="row">
@@ -239,27 +135,24 @@ import AboutCard from "@/components/AboutCard.vue";
 import Resume from "@/components/ResumeCard.vue";
 import Contact from "@/components/Contact.vue"
 import Projects from "@/components/Projects.vue"
+import Skills from "@/components/Skills.vue"
 
 export default {
     name: "master",
-    components: { AboutCard, Testimonials, Resume, Contact, Projects },
+    components: { AboutCard, Skills, Testimonials, Resume, Contact, Projects },
 };
 </script>
 
 <style scoped>
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
-*{
-    font-family: 'Roboto Slab', serif;
-} */
-
 #master {
     min-height: 100%;
-    padding: 16rem;
-    background: linear-gradient(15deg, #a529b9 19.9%, rgb(80, 177, 225) 95%);
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+    background: linear-gradient(15deg, #a529b9 19.9%, #50b1e1 95%);
     overflow-x: hidden;
 }
 
-#ProjectCard{
+#ProjectCard {
     min-height: 50vh;
     padding: 1rem;
     margin: 2rem;
@@ -295,19 +188,19 @@ export default {
 #Contact {
     min-height: 50vh;
     padding: 1rem;
+    margin: 1rem;
+    position: relative;
+    right: 2rem;
+}
+
+#SkillSection {
+    min-height: 50vh;
+    padding: 1rem;
     margin: 2rem;
 }
 
-.Resumerow{
+.Resumerow {
     margin-top: -6rem;
-}
-
-.progress {
-    margin-bottom: 1rem;
-    width: 80%;
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .contact-text {
@@ -436,6 +329,7 @@ img {
 
 .theme-after p {
     font-family: 'Work Sans', sans-serif;
+    font-size: 2rem;
 }
 
 .theme-after:before {
@@ -470,6 +364,7 @@ a:hover {
     display: inline-block;
     text-decoration: none !important;
     transition: ease all 0.3s;
+    font-size: 2rem;
 }
 
 a {
@@ -533,7 +428,8 @@ a {
             #9c66e5 100%);
     border: none;
     box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
-    transform: scale(0.93);
+    transform: scale(1.93);
+    font-weight: 600;
 }
 
 .gradient3 {
@@ -601,8 +497,6 @@ a {
 a:hover {
     color: #111;
 }
-
-
 
 .full-screen {
     min-height: 45vh;
@@ -703,5 +597,49 @@ a:hover {
     border: none;
     box-shadow: 0 10px 30px #8c38fe, 0 3px 0 0 #9c66e5;
     transform: translateY(-3px);
+}
+
+@media only screen and (max-width: 790px) {
+    #master {
+        padding-top: 6rem;
+        padding-bottom: 7rem;
+    }
+
+    #SkillSection {
+        height: 245vh;
+        padding: 0;
+        margin: 0;
+    }
+
+    .profile-image {
+        width: 29rem;
+        margin-top: 2rem;
+    }
+
+    .aboutText {
+        margin-right: 3rem;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .about-left{
+        position: relative;
+        right: 2rem;
+    }
+    .gradient3{
+        position: relative;
+        left: 3rem;
+    }
+      .profile-image{
+        position: relative;
+        right: 2rem;
+        width: 19rem;
+        margin-bottom: -3rem;
+      }
+
+      .test-text{
+        position: relative;
+        bottom: 3rem;
+      }
 }
 </style>

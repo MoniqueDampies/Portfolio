@@ -1,13 +1,18 @@
 <template>
-    <header class="container">
+    <header>
         <div id="home"></div>
         <nav class="navbar navbar-expand-sm navbar bg-transparent fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand mb-0 h1" href="#">Monique.</a>
-                <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon bg-light"></span>
-                </button>
+            <div class="container">
+                <!-- <a class="navbar-brand mb-0 h1" href="#">Monique.</a> -->
+                <!-- button -->
+                <div class="row">
+                    <button class="navbar-toggler text-end justify-content-end" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon bg-light"></span>
+                    </button>
+                </div>
+
+                <!-- data -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav"
                     style="text-shadow: 5px 3px 4px rgba(193, 185, 193, 0.8);">
                     <ul class="navbar-nav">
@@ -41,8 +46,19 @@ export default {
 </script>
 
 <style scoped>
-.container{
-    width: 90%;
+header {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.container {
+    /* width: 90%; */
 }
 
 .nav-item a {
@@ -78,15 +94,16 @@ export default {
     color: #000000;
 }
 
-.nav-item a:hover::before {
+.nav-item a:hover {
     transform-origin: middle;
-    transform: scaleX(1);
+    transform: scaleX(1.05);
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.633) !important;
+    color: rgba(16, 14, 14, 0.633) !important;
 }
 
 .navbar:hover {
-    color: #000000;
+    /* color: #000000; */
+    width: 100%;
     background: rgba(255, 255, 255, 0.23);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -94,4 +111,13 @@ export default {
     -webkit-backdrop-filter: blur(16.3px);
 }
 
+button {
+    justify-content: end;
+}
+
+@media only screen and (max-width: 790px) {
+    .navbar-toggler-icon{
+        border-radius: 10rem;
+    }
+}
 </style>

@@ -1,10 +1,10 @@
 <template>
-    <div id="resume" >
+    <div id="resume">
         <div>
             <div class="work">
                 <div id="container timeline-sec">
                     <div class="row main center">
-                        <div class="box center col-md-6 col-lg-4 col-sm-12" v-for="item of ResumeArray" :key="item.id">
+                        <div class="box center col-sm-12 col-lg-4" v-for="item of ResumeArray" :key="item.id">
                             <img class="resume-image w-25" :src="item.icon" :alt="item.name">
                             <h4>{{ item.year }}</h4>
                             <h5>{{ item.name }}</h5>
@@ -63,7 +63,7 @@ export default {
 
 <style scoped>
 #resume {
-    color: rgb(0, 0, 0);
+    color: #1e1b1b;
     min-height: 100vh;
     /* display: flex;
     justify-content: center; */
@@ -71,7 +71,7 @@ export default {
 }
 
 
-.w-25{
+.w-25 {
     width: 8rem !important;
 }
 
@@ -99,7 +99,7 @@ export default {
 .box {
     width: 37rem;
     gap: 1rem;
-    height: 25rem;
+    height: 27rem;
     padding: 2rem;
     background: linear-gradient(145deg, #E5E6E6, #FFFFFF);
     box-shadow: 10px 10px 10px #E5E6E6,
@@ -115,19 +115,19 @@ export default {
     padding: 1rem;
 }
 
-.box:hover{
+.box:hover {
     color: white !important;
 }
 
 
 img {
     border-radius: 15px;
-    box-shadow: -1px 4px 35px -3px rgba(0,0,0,0.62);
--webkit-box-shadow: -1px 4px 35px -3px rgba(0,0,0,0.62);
--moz-box-shadow: -1px 4px 35px -3px rgba(0,0,0,0.62);
+    box-shadow: -1px 4px 35px -3px rgba(0, 0, 0, 0.62);
+    -webkit-box-shadow: -1px 4px 35px -3px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: -1px 4px 35px -3px rgba(0, 0, 0, 0.62);
 }
 
-.row{
+.row {
     gap: 4rem;
 }
 
@@ -160,78 +160,110 @@ img {
 }
 
 .box p,
-h4, h5,
+h4,
+h5,
 img {
     margin: 5px 50px;
     z-index: 100;
 }
 
-@media only screen and (max-width: 1025px){
+@media only screen and (max-width: 1025px) {
+
     /*Tablets [601px -> 1200px]*/
     .box {
-    width: 26rem;
-    height: 30rem;
-    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+        width: 26rem;
+        height: 30rem;
+        box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
 
-    margin: 1rem;
-    flex-direction: column;
-    background: white;
-    font-size: 1.2rem;
-    border-radius: 15px;
-    position: relative;
-    transition: all .4s;
-    overflow: hidden;
-    padding: 1rem;
+        margin: 1rem;
+        flex-direction: column;
+        background: white;
+        font-size: 1.2rem;
+        border-radius: 15px;
+        position: relative;
+        transition: all .4s;
+        overflow: hidden;
+        padding: 1rem;
+    }
+
+    .row {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .box::before {
+        content: '';
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        width: 5px;
+        height: 350px;
+        color: white;
+        border-radius: 50px;
+        transition: all .6s;
+        background: linear-gradient(15deg, #8c38fe 10%, #b72ee4 50%, #9c66e5 100%);
+    }
+
+    .box:nth-child(1)::before {
+        color: white;
+        background: linear-gradient(15deg, #8c38fe 10%, #b72ee4 50%, #9c66e5 100%);
+    }
+
+    .box:hover::before {
+        top: 0;
+        left: 0;
+        color: white;
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .box p,
+    h1,
+    img {
+        margin: 5px 50px;
+        z-index: 100;
+    }
+
+
 }
 
-.row{
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+@media only screen and (max-width: 790px) {
+    #resume {
+        padding: 0;
+        margin: 0;
+        margin-top: 0;
+        padding-top: 0;
+    }
 
-.box::before {
-    content: '';
-    position: absolute;
-    top: 50px;
-    left: 20px;
-    width: 5px;
-    height: 350px;
-    color: white;
-    border-radius: 50px;
-    transition: all .6s;
-    background: linear-gradient(15deg, #8c38fe 10%, #b72ee4 50%, #9c66e5 100%);
-}
+    .box {
+        display: flex;
+        height: 30rem;
+        position: relative;
+        top: 5rem;
+        width: 100%;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        font-size: .8rem;
+        padding: 10px;
+        margin: 0;
+    }
 
-.box:nth-child(1)::before {
-    color: white;
-    background: linear-gradient(15deg, #8c38fe 10%, #b72ee4 50%, #9c66e5 100%);
-}
-
-.box:hover::before {
-    top: 0;
-    left: 0;
-    color: white;
-    border-radius: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.box p,
-h1,
-img {
-    margin: 5px 50px;
-    z-index: 100;
-}
-    
+    .box p,
+    h4,
+    h5,
+    img {
+        margin: 5px 20px;
+        z-index: 100;
+    }
+    h5{
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    .box::before {
+        height: 400px;
+    }
 
 }
-@media only screen and (max-width: 600px){
-	/*Big smartphones [426px -> 600px]*/
-}
-@media only screen and (max-width: 425px){
-	/*Small smartphones [325px -> 425px]*/
-}
-
-
-
 </style>

@@ -1,9 +1,8 @@
 <template>
-    <div id="carousel" class="container">
-        <div class="row">
+    <div id="carousel">
             <div class="col-sm-12">
                 <div class="owl-carousel" ref="owl">
-                    <div id="test-card" class="testi-content" v-for="item of TestimonialsArray" :key="item.id">
+                    <div id="test-card" class="testi-content col-sm-10" v-for="item of TestimonialsArray" :key="item.id">
                         <img class="testi-pic" :src="item.image" :alt="item.name">
                         <h4>{{ item.name }}</h4>
                         <h5>{{ item.title }}</h5>
@@ -12,7 +11,6 @@
                 </div>
             </div>
         </div>
-    </div>
 </template>
 
 <script>
@@ -81,7 +79,7 @@ export default {
                     dots: false
                 },
                 800: {
-                    items: 2,
+                    items: 1,
                     nav: false,
                     dots: false
                 },
@@ -108,7 +106,7 @@ export default {
 
 
 #testimonial-card {
-    background-color: #111;
+    background-color: rgb(31, 27, 27);
 }
 
 .testi-pic{
@@ -178,24 +176,19 @@ export default {
     overflow-x: hidden;
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 790px) {
 
-    /*Big smartphones [426px -> 600px]*/
+   
     .owl-carousel .owl-item img {
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        width: 70%;
     }
 
     #test-card {
-        position: relative;
-        left: 7rem;
         margin-bottom: 1rem;
-        margin: 10px;
         height: 35rem;
-        padding: 2rem;
-        width: 30rem;
+        width: 100%;
     }
 }
 </style>

@@ -10,9 +10,9 @@
                         <p class="project-short-desc">
                             {{ item.text }}</p>
                         <div class="row">
-                            <button class="project-btn hover-border"> <a :href="item.live">
+                            <button class="project-btn hover-border col-sm-2"> <a :href="item.live">
                                     LIVE</a> </button>
-                            <button class="project-btn hover-border"> <a :href="item.link">
+                            <button class="project-btn hover-border col-sm-2"> <a :href="item.link">
                                     GITHUB</a> </button>
                         </div>
                     </div>
@@ -48,7 +48,7 @@ export default {
                     "id": 3,
                     "image": "background-image: url(https://i.postimg.cc/T3wxtyZc/jellyfish.jpg)",
                     "title": "Jellyfish website",
-                    "text": "A basic HTML5 and CSS3 site built to practice Iframes and transitions",
+                    "text": "A basic HTML5 and CSS3 site built to practice iframes and transitions",
                     "live": "https://jelliefishies.netlify.app/",
                     "link": "https://github.com/MoniqueDampies/jellyfish"
                 },
@@ -56,7 +56,7 @@ export default {
                     "id": 4,
                     "image": "background-image: url(https://i.postimg.cc/66rBqxrC/interest-calculator.jpg)",
                     "title": "Interest Calculator",
-                    "text": "A Simple Interest and Compound Interest Calculator built using HTML5, CSS3, Bootstrap and Javascript",
+                    "text": "A Simple and Compound Interest Calculator built using HTML5, CSS3, Bootstrap and Javascript",
                     "live": "https://monique-interestamount-calculator.netlify.app",
                     "link": "https://github.com/MoniqueDampies/InterestAmount"
                 },
@@ -91,8 +91,6 @@ export default {
     /* Color */
     --main-color: #e2e2f0;
     --secondary-color: rgb(14, 13, 13);
-
-
     /* Font-size */
     --font-size-main-title: 6rem;
     --font-size-secondary-title: 2.5rem;
@@ -288,7 +286,7 @@ html {
 .hover-border {
     display: inline-block;
     position: relative;
-    left: 3px;
+    left: 6rem;
     color: #ffffff;
     cursor: pointer;
     margin: 10px;
@@ -308,6 +306,51 @@ html {
 }
 
 .hover-border:hover:after {
-    width: 90%;
+    width: 3rem;
+}
+
+@media only screen and (max-width: 790px) {
+    .projects-card {
+        position: relative;
+        /* left: -2.5rem; */
+        width: 17rem;
+        height: 25em;
+        padding-bottom: 1rem;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .projects-card:hover .project-info-container {
+        top: 30%;
+    }
+
+    .row {
+        flex-direction: row;
+    }
+
+    .project-btn {
+        position: relative;
+        bottom: 1.2rem;
+        left: 1.9rem;
+        padding: 0;
+    }
+
+}
+
+@media only screen and (max-width: 326px) {
+    .projects-card {
+        position: relative;
+        left: -2.5rem;
+        width: 17rem;
+        height: 25em;
+        padding-bottom: 1rem;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hover-border:hover:after {
+    width: 8.4rem;
+}
 }
 </style>

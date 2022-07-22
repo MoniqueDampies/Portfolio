@@ -58,7 +58,7 @@ export default {
 <style scoped>
 .card-content {
     background: #f5f5f5;
-    height: 350px;
+    height: 370px;
     padding: 10px;
     margin-top: 1em;
     margin-bottom: 2em;
@@ -103,5 +103,26 @@ card-content p {
 #icon-border:hover {
     opacity: 1.5;
     filter: contrast(100%);
+}
+
+@media only screen and (max-width: 790px){
+	.card-content{
+        height: 400px;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        left: .7rem;
+        height: 90%;
+    }
+
+    #card-icons{
+        position: relative;
+        left: -1.6rem;
+        bottom: 1.4rem;
+    }
+
+    #icon-border{
+        height: 7rem;
+    }
 }
 </style>

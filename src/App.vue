@@ -1,14 +1,16 @@
 <template>
   <Navbar />
   <router-view />
+  <Footer />
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   components: {
-    Navbar,
+    Navbar, Footer
   }
 }
 </script>
@@ -16,8 +18,10 @@ export default {
 
 <style>
 
+
 body{
   overflow-x: hidden;
+  background-color: rgb(245, 239, 239);
 }
 
 ::-webkit-scrollbar {
