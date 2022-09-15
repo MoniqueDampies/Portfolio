@@ -17,11 +17,12 @@ export default {
 
 
 <style>
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 body{
+  font-family: 'Source Sans Pro', sans-serif;
   overflow-x: hidden;
-  background-color: rgb(245, 239, 239);
+  background: linear-gradient(25deg, #a529b9 19.9%, #50b1e1 95%);
 }
 
 ::-webkit-scrollbar {

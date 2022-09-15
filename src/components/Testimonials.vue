@@ -99,19 +99,18 @@ export default {
 
 <style scoped>
 #testimonials {
-    background-color: white;
     color: black;
     min-height: 100vh;
 }
 
 
-#testimonial-card {
+/* #testimonial-card {
     background-color: rgb(31, 27, 27);
-}
+} */
 
-.testi-pic{
+/* .testi-pic{
     width: 5rem;
-}
+} */
 
 .testi-content {
     background-color: #111;
@@ -121,11 +120,18 @@ export default {
     margin-bottom: 2em;
     padding: 1rem;
     margin: 2rem;
-    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+    /* box-shadow: 3px 3px 8px hsl(0, 0%, 70%); */
     border-radius: 10px;
-    background: linear-gradient(145deg, #dddddd, #ffffff);
-    box-shadow: 10px 10px 10px #dddddd,
-        -10px -10px 10px #ffffff;
+    /* background: linear-gradient(145deg, #dddddd, #ffffff); */
+    /* box-shadow: 10px 10px 10px #dddddd,
+        -10px -10px 10px #ffffff; */
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.02);
+border-radius: 10px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.7px);
+-webkit-backdrop-filter: blur(10.7px);
+ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
 }
 
@@ -133,32 +139,37 @@ export default {
     border-radius: 10px !important;
 }
 
-.testi-content h4 {
+.testi-content h4{
     font-weight: 500;
     text-align: center;
     margin-top: 5px;
+    font-size: 1.8rem;
+    /* border: 1px solid white; */
 }
 
-.testi-content p {
+.testi-content h6{
     font-weight: 500;
     font-size: 100%;
     padding: 1rem;
-    margin: 5px;
+    padding-top: 1rem;
+    /* border: 1px solid white; */
 }
 
-.testi-content h5 {
+.testi-content h5{
     font-weight: 500;
     text-align: center;
-    font-size: 100%;
-    padding: 1rem;
-    margin: 5px;
+    font-size: 1.3rem;
+    /* border: 1px solid white; */
 }
 
 
 #test-card {
     margin-bottom: 1rem;
     margin: 10px;
-    height: 41rem;
+    height: 42rem;
+        width: 95%;
+        color: white;
+        letter-spacing: 1px;
 }
 
 #testi-profiles img {
@@ -174,6 +185,9 @@ export default {
 
 #carousel {
     overflow-x: hidden;
+    padding: 25px;
+    border: none;
+    outline: none;
 }
 
 @media only screen and (max-width: 790px) {

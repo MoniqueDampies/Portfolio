@@ -17,7 +17,7 @@
         <div class="skillBar">
             <h4>Bootstrap</h4>
             <div class="skillBarContainer">
-                <div class="skillBarValue value-60"></div>
+                <div class="skillBarValue value-70"></div>
             </div>
         </div>
 
@@ -38,7 +38,7 @@
         <div class="skillBar">
             <h4>Vue.Js</h4>
             <div class="skillBarContainer">
-                <div class="skillBarValue value-40"></div>
+                <div class="skillBarValue value-50"></div>
             </div>
         </div>
     </div>
@@ -87,8 +87,6 @@
         </div>
     </div>
 
-
-
 </template>
 
 <script>
@@ -100,13 +98,16 @@ export default {
 <style scoped>
 .contentContainer {
     padding: 20px;
-    max-width: 600px;
+    max-width: 580px;
     min-width: 150px;
     margin: 15vh auto;
     border-radius: 10px;
-    background: linear-gradient(145deg, #dddddd, #FFFFFF);
-    box-shadow: 10px 10px 10px #dddddd,
-        -10px -10px 10px #ffffff;
+background: rgba(255, 255, 255, 0.02);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.7px);
+-webkit-backdrop-filter: blur(10.7px);
+ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .skillBar {
@@ -118,7 +119,9 @@ h4 {
     font-size: 21px;
     font-size: 1.33em;
     text-transform: none;
-    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-weight: bold;
     margin-bottom: 7px;
     margin-bottom: .33em;
@@ -271,17 +274,29 @@ h4 {
 
 
 @media only screen and (max-width: 790px){
- .box2{
+ /* .box2{
     position: relative;
     bottom: 6rem;
 
- }
+ } */
     .contentContainer{
-        width: 18rem;
+        max-width: 80%;
         margin-top: 7rem;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    border: 1px solid black
     }
 
 
 }
+
+/* @media only screen and (max-width: 1025px){
+   
+    .contentContainer{
+        width: 25rem;
+        margin-top: 7rem;
+    }
+} */
 
 </style>

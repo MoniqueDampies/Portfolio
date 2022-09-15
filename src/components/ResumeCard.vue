@@ -83,9 +83,8 @@ export default {
     padding-top: 5rem;
     display: flex;
     flex-direction: row;
-    background: linear-gradient(145deg, #E5E6E6, #FFFFFF);
-    box-shadow: 10px 10px 10px #E5E6E6,
-        -10px -10px 10px #FFFFFF;
+ background: rgb(236, 236, 236);
+ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 
@@ -100,10 +99,13 @@ export default {
     width: 37rem;
     gap: 1rem;
     height: 27rem;
-    padding: 2rem;
-    background: linear-gradient(145deg, #E5E6E6, #FFFFFF);
-    box-shadow: 10px 10px 10px #E5E6E6,
-        -10px -10px 10px #FFFFFF;
+    padding: 2rem;/* From https://css.glass */
+background: rgba(255, 255, 255, 0.02);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.7px);
+-webkit-backdrop-filter: blur(10.7px);
+ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     margin: 10px;
     flex-direction: column;
     font-size: 1rem;

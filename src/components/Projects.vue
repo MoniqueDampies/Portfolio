@@ -100,26 +100,6 @@ export default {
     --font-size-btn: 1.6rem;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-body,
-html {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 10px;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    background: #f2f2f2;
-}
-
-
 .projects-card {
     position: relative;
     width: 25em;
@@ -132,8 +112,7 @@ html {
     /* border: 2px solid black; */
     overflow-y: hidden;
     border-radius: 10px;
-    box-shadow: 10px 10px 10px #E5E6E6,
-        -10px -10px 10px #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .project-info-container {
@@ -349,8 +328,9 @@ html {
         margin-left: auto;
         margin-right: auto;
     }
+
     .hover-border:hover:after {
-    width: 8.4rem;
-}
+        width: 8.4rem;
+    }
 }
 </style>

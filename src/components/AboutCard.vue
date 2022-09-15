@@ -1,13 +1,14 @@
 <template>
     <article class="col-md-6 col-lg-4 col-sm-12" v-for="item of AboutArray" :key="item.id">
-        <div class="card-content">
+        <div class="card-content col-sm-12">
             <div id="icon-border">
                 <img id="card-icons" class="card-image" :src="item.icon" alt="mmm">
-                </div>
-            <h4 class="spectrum-h2 text-black text-center">{{ item.title }}</h4>
+            </div>
+            <h4 class="text-center">{{ item.title }}</h4>
             <p> {{ item.text }} </p>
         </div>
     </article>
+
 </template>
 
 <script>
@@ -57,27 +58,45 @@ export default {
 
 <style scoped>
 .card-content {
-    background: #f5f5f5;
+    height: 380px;
+    padding: 20px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    /* border: 2px solid white; */
+    background: rgba(255, 255, 255, 0.02);
+    /* border-radius: 16px; */
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    backdrop-filter: blur(10.7px);
+    -webkit-backdrop-filter: blur(10.7px);
+    transition: all 0.5s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* .card-content:hover {
     height: 370px;
     padding: 10px;
     margin-top: 1em;
     margin-bottom: 2em;
+    color: rgb(255, 255, 255)!important;
     box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
-    border-radius: 10px;
-    background: linear-gradient(145deg, #dddddd, #FFFFFF);
+    border-radius: 8px;
     box-shadow: 10px 10px 10px #dddddd,
-        -10px -10px 10px #ffffff;
-}
+        -10px -10px 10px #ffffff; 
+    background-color: #111;
+ 
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+} */
 
-card-content h3 {
-    margin-bottom: 0.5em;
-    font-weight: normal;
+h4 {
     text-align: center;
 }
+
 
 card-content p {
     font-size: 95%;
     padding: 1rem;
+    color: rgb(255, 255, 255);
 }
 
 #icon-border {
@@ -86,42 +105,76 @@ card-content p {
     margin-right: auto;
     width: 40%;
     aspect-ratio: 1;
-    padding: 2rem;
-    /* border: 5px solid black; */
+    padding: 1rem;
+    /* border: 1px solid black; */
     border-radius: 100px;
     margin-bottom: 10px;
     opacity: 0.8;
     transition: all 0.5s ease;
+    border-radius: 50%;
 }
 
-#icon-border:hover {
-    text-decoration: none;
-    background-color: #111;
-    border: #feffff;
+.col-lg-4 {
+    flex: 0 0 auto;
+    width: 28.333333%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#icon-border:hover {
-    opacity: 1.5;
-    filter: contrast(100%);
+@media only screen and (max-width: 790px) {
+    .card-content {
+        height: 400px;
+        width: 30rem;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        left: .7rem;
+        height: 90%;
+        border: 1px solid white;
+    }
+
+    #card-icons {
+        position: relative;
+        left: -1.6rem;
+        bottom: 1.4rem;
+    }
+
+    #icon-border {
+        height: 7rem;
+    }
 }
 
-@media only screen and (max-width: 790px){
-	.card-content{
+
+
+/* @media (min-width: 992px) {
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 28.333333%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} */
+
+@media only screen and (max-width: 1025px) {
+    .card-content {
         height: 400px;
         justify-content: center;
         text-align: center;
         position: relative;
         left: .7rem;
         height: 90%;
+        padding: 1.1rem;
     }
 
-    #card-icons{
+    #card-icons {
         position: relative;
         left: -1.6rem;
         bottom: 1.4rem;
     }
 
-    #icon-border{
+    #icon-border {
         height: 7rem;
     }
 }

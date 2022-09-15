@@ -2,27 +2,13 @@
     <section id="contact" class="section p-0px-b contact-section">
         <div class="container pt-1">
             <div class="row justify-content-center m-60px-b md-m-40px-b">
-                <div class="col-sm-12 col-md-10 col-lg-7">
-                    <div class="section-title text-center text-black">
-                        <h2 class="contact-text text-black">Contact Me</h2>
+                <!-- <div class="col-sm-12 col-md-10 col-lg-7">
+                    <div class="section-title text-center">
+                        <h2 class="contact-text">Contact Me</h2>
                     </div>
-                </div>
+                </div> -->
             </div>
-            <!-- SECTION LINE DIVIDER -->
-            <div class="progress" style="height: 3px">
-                <div class="progress-bar bg-transparent" role="progressbar" style="width: 0%" aria-valuenow="15"
-                    aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar bg-transparent" role="progressbar" style="width: 0%" aria-valuenow="30"
-                    aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar bg-transparent" role="progressbar" style="width: 10%" aria-valuenow="20"
-                    aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar bg-transparent" role="progressbar" style="width: 0%" aria-valuenow="20"
-                    aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar bg-transparent" role="progressbar" style="width: 0%" aria-valuenow="20"
-                    aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <!-- SECTION LINE DIVIDER -->
-            <div class="contact-us-box container" >
+            <div class="contact-us-box container">
                 <div class="row no-gutters ">
                     <div class="col-md-6 col-sm-5 ">
                         <div class="contact-info-box">
@@ -33,65 +19,65 @@
                             </p>
                             <div class="container">
                                 <div class="row">
-  <div class="contact-info col-sm-7 col-md-12">
-                                <a href="https://www.google.com/maps/place/Mitchells+Plain,+Cape+Town/@-34.0484419,18.602939,13z/data=!3m1!4b1!4m5!3m4!1s0x1dcc4721e60ec221:0xd3097704b4edb9ac!8m2!3d-34.0485946!4d18.6056873"
-                                    target="_blank">
-                                    <i class="icon theme-bg ti-direction">
-                                        <img src="https://img.icons8.com/nolan/64/worldwide-location.png" />
-                                    </i>
-                                </a>
-                                <p>Mitchells Plain, Cape Town, 7785.</p>
-                            </div>
-                            <div class="contact-info col-sm-7 col-md-12">
-                                <a href="mailto:moniquedampies1861@gmail.com">
-                                    <i class="icon theme-bg ti-email">
-                                        <img src="https://img.icons8.com/nolan/64/email-sign.png" />
-                                    </i>
-                                </a>
-                                <p>moniquedampies1861</p>
-                                <p>@gmail.com</p>
-                            </div>
-                            <div class="contact-info col-sm-7 col-md-12">
-                                <a href="tel:0638729906" target="_blank">
-                                    <i class="icon theme-bg ti-mobile">
-                                        <img src="https://img.icons8.com/nolan/64/phone.png" />
-                                    </i>
-                                </a>
-                                <p>063 872 9906</p>
-                            </div>
-                            <div class="contact-info col-sm-7 col-md-12">
-                                <a href="https://github.com/MoniqueDampies" target="_blank">
-                                    <i class="icon theme-bg ti-direction">
-                                        <img src="https://img.icons8.com/nolan/64/github.png" />
-                                    </i>
-                                </a>
-                                <p>Github</p>
-                            </div>
-                            <div class="contact-info col-sm-7 col-md-12">
-                                <a href="https://codepen.io/MoniqueDampies" target="_blank">
-                                    <i class="icon theme-bg ti-direction">
-                                        <img src="https://i.postimg.cc/gjWGZZk4/icons8-codepen-50.png" />
-                                    </i>
-                                </a>
-                                <p>CodePen</p>
-                            </div>
+                                    <div class="contact-info col-sm-7 col-md-12">
+                                        <a href="https://www.google.com/maps/place/Mitchells+Plain,+Cape+Town/@-34.0484419,18.602939,13z/data=!3m1!4b1!4m5!3m4!1s0x1dcc4721e60ec221:0xd3097704b4edb9ac!8m2!3d-34.0485946!4d18.6056873"
+                                            target="_blank">
+                                            <i class="icon theme-bg ti-direction">
+                                                <img src="https://img.icons8.com/nolan/64/worldwide-location.png" />
+                                            </i>
+                                        </a>
+                                        <p>Mitchells Plain, Cape Town, 7785.</p>
+                                    </div>
+                                    <div class="contact-info col-sm-7 col-md-12">
+                                        <a href="mailto:moniquedampies1861@gmail.com">
+                                            <i class="icon theme-bg ti-email">
+                                                <img src="https://img.icons8.com/nolan/64/email-sign.png" />
+                                            </i>
+                                        </a>
+                                        <p>moniquedampies1861@gmail.com</p>
+                                    </div>
+                                    <div class="contact-info col-sm-7 col-md-12">
+                                        <a href="tel:0638729906" target="_blank">
+                                            <i class="icon theme-bg ti-mobile">
+                                                <img src="https://img.icons8.com/nolan/64/phone.png" />
+                                            </i>
+                                        </a>
+                                        <p>063 872 9906</p>
+                                    </div>
+                                    <div class="contact-info col-sm-7 col-md-12">
+                                        <a href="https://github.com/MoniqueDampies" target="_blank">
+                                            <i class="icon theme-bg ti-direction">
+                                                <img src="https://img.icons8.com/nolan/64/github.png" />
+                                            </i>
+                                        </a>
+                                        <p>Github</p>
+                                    </div>
+                                    <div class="contact-info col-sm-7 col-md-12">
+                                        <a href="https://codepen.io/MoniqueDampies" target="_blank">
+                                            <i class="icon theme-bg ti-direction">
+                                                <img src="https://i.postimg.cc/gjWGZZk4/icons8-codepen-50.png" />
+                                            </i>
+                                        </a>
+                                        <p>CodePen</p>
+                                    </div>
                                 </div>
                             </div>
-                          
+
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-5">
                         <!-- Contact Form -->
                         <div class="contact-form">
-                            <h2>Message me</h2>
+                            <h2 class="text-white">Message me</h2>
                             <form action="https://formspree.io/f/mdobydwb" method="POST">
                                 <div class="form-group">
-                                    <input name="Name" type="text" required placeholder="Name" class="form-control" autocomplete="off"/>
+                                    <input name="Name" type="text" required placeholder="Name" class="form-control"
+                                        autocomplete="off" />
                                 </div>
                                 <br />
                                 <div class="form-group">
-                                    <input name="Email" type="email" required placeholder="Email"
-                                        class="form-control" autocomplete="off" />
+                                    <input name="Email" type="email" required placeholder="Email" class="form-control"
+                                        autocomplete="off" />
                                 </div>
                                 <br />
                                 <div class="form-group">
@@ -99,9 +85,9 @@
                                         class="form-control" autocomplete="off" />
                                 </div>
                                 <br />
-                                <div class="form-group">
-                                    <textarea name="Message" type="text" required placeholder="Message" rows="3"
-                                        class="form-control"></textarea>
+                                <div class="form-group message">
+                                    <input name="Message" type="text" required placeholder="Message" rows="3"
+                                        class="form-control" id="message" autocomplete="off">
                                 </div>
                                 <br />
                                 <div class="send">
@@ -130,22 +116,23 @@ export default {
     border: none;
 }
 
+::placeholder {
+    color: white;
+}
+
 .m-btn-theme {
     color: #fff;
 }
 
-.progress{
-    margin-bottom: 4rem;
-}
+
 .contact-info-box {
-    padding: 8%;
+    padding:10%;
 }
 
 .contact-text {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 600;
-    background: #a529b9;
-    background: linear-gradient(to right, #a529b9 11%, #50b1e1 100%);
+    background: #ffffff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -153,22 +140,35 @@ export default {
 .contact-info-box h2 {
     text-transform: capitalize;
     margin: 0;
-    padding: 0 0 15px;
-    font-size: 20px;
+    padding: 0 0 20px;
+    font-size: 30px;
+    color: white;
     font-weight: 600;
-    color: #151515;
+    /* color: #151515; */
 }
 
 .contact-info-box .desc {
-    width: 400px;
+    width: 450px;
     max-width: 100%;
     margin-bottom: 40px;
+    color: white;
+    font-size: 20px;
 }
 
 .contact-info-box .contact-info {
     position: relative;
-    padding-left: 50px;
+    padding-left: 45px;
     padding-bottom: 20px;
+    font-size: 20px;
+    /* border: 1px solid black; */
+}
+
+.contact-info-box .contact-info p {
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+    /* border: 1px solid black; */
 }
 
 .contact-info-box .contact-info .icon {
@@ -186,7 +186,7 @@ export default {
     font-size: 17px;
 }
 
-.icon img{
+.icon img {
     width: 2.2rem;
 }
 
@@ -194,6 +194,8 @@ export default {
     margin: 0;
     line-height: 2.5rem;
     font-size: 1rem;
+    letter-spacing: 1.5px;
+    /* border: 1px solid black; */
 }
 
 .contact-info-box .social-icons {
@@ -223,17 +225,18 @@ export default {
 }
 
 .contact-form {
-    border-left: 1px solid #ddd;
-    padding: 8%;
+    /* border-left: 2px solid #ddd; */
+    padding: 10%;
 }
 
 .contact-form h2 {
     text-transform: capitalize;
-    margin: 0;
-    padding: 0 0 20px;
-    font-size: 20px;
+    /* margin: 0; */
+
+    padding: 0 0 10px;
+    font-size: 30px;
     font-weight: 600;
-    color: #151515;
+    color: white;
 }
 
 .contact-form .form-control {
@@ -242,29 +245,36 @@ export default {
     height: 45px;
 }
 
-.contact-form textarea.form-control {
-    height: 100px;
-}
+
 
 .form-control:focus {
-    outline: 2px solid #a629b9c0;
-    border: none;
+    outline: 2px solid #a629b9c0 !important;
+    /* border: none; */
     box-shadow: none;
 }
 
-.form-group{
-    height: 3rem;
+input{
+    margin-top: 1rem;
+    height: 3rem !important;
+    background-color: transparent;
 }
+
+#message{
+    height: 7rem !important;
+    background-color: transparent;
+}
+
 /* SEND BUTTON FORM */
 .send button {
-    margin-top: 3rem;
+    margin-top: 1rem;
     background-color: rgb(165, 41, 185);
 }
+
 .m-btn {
-    height: 45px;
+    height: 50px;
     line-height: 45px;
     padding: 0 30px;
-    font-size: 10px;
+    font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-weight: 500;
@@ -276,17 +286,27 @@ export default {
     display: inline-block;
     text-decoration: none !important;
 }
+
 .contact-us-box {
-    margin: 0 5%;
+    /* margin: 0 5%; */
     position: relative;
-    background: #fff;
-    box-shadow: 0px 1px 27px -3px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 103%;
+    /* border: 2px solid white; */
+    background: rgba(255, 255, 255, 0.02);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.7px);
+    -webkit-backdrop-filter: blur(10.7px);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     border-radius: 10px;
 }
 
-.section-title p {
-    font-size: 1.1rem;
-}
+/* .section-title p {
+    font-size: 2.1rem;
+} */
 
 .btn-gradient {
     background: #feffff !important;
@@ -325,36 +345,35 @@ export default {
 
 /***************** END OF contact *************************/
 
-@media only screen and (max-width: 768px) { 
-.contact-us-box {
-    position: relative;
-    left: -4rem;
-    width: 18rem;
-     margin: 0;
-     padding: 0;
-}
-
-.contact-text{
-    width: 14rem;
-    position: relative;
-}
-}
-
-@media only screen and (max-width: 338px){
+@media only screen and (max-width: 768px) {
     .contact-us-box {
-    position: relative;
-    left: -1rem;
-    width: 18rem;
-    margin: 0;
-    padding: 0;
+        position: relative;
+        left: -4rem;
+        width: 18rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-text {
+        width: 14rem;
+        position: relative;
+    }
 }
 
-    .contact-info-box{
+@media only screen and (max-width: 338px) {
+    .contact-us-box {
+        position: relative;
+        left: -1rem;
+        width: 18rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-info-box {
         position: relative;
         left: 1rem;
         right: 1rem;
         padding: .1rem;
     }
 }
-
 </style>

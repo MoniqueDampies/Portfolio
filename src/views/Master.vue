@@ -59,7 +59,7 @@
     <div class="row justify-content-center m-60px-b md-m-40px-b">
         <div class="col-sm-12 col-md-10 col-lg-7">
             <div class="section-title text-center text-black">
-                <h2 class="contact-text text-black mt-4">My Skills</h2>
+                <h2 class="contact-text text-black mt-5">My Skills</h2>
             </div>
         </div>
     </div>
@@ -97,7 +97,7 @@
         </div>
     </div>
     <section id="ResumeCard">
-        <div class="container">
+        <div class="container mt-3">
             <div class="row Resumerow">
                 <Resume />
             </div>
@@ -107,7 +107,7 @@
     <div id="projects" class="row justify-content-center m-60px-b md-m-40px-b">
         <div class="col-12 col-md-10 col-lg-7">
             <div class="section-title text-center text-black">
-                <h2 class="contact-text text-black mt-5 mb-3">My Projects</h2>
+                <h2 class="contact-text text-black mt-5 mb-5">My Projects</h2>
             </div>
         </div>
     </div>
@@ -117,9 +117,16 @@
                 <Projects />
             </div>
         </div>
-
     </section>
+
     <!-- Contact Section -->
+    <div id="contact" class="row justify-content-center m-60px-b md-m-40px-b">
+        <div class="col-12 col-md-10 col-lg-7">
+            <div class="section-title text-center text-black">
+                <h2 class="contact-text text-black mt-5 mb-3">Contact Me</h2>
+            </div>
+        </div>
+    </div>
     <section id="Contact">
         <div class="container">
             <div class="row">
@@ -127,6 +134,33 @@
             </div>
         </div>
     </section>
+
+    <!-- shapes -->
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
 </template>
 
 <script>
@@ -144,12 +178,186 @@ export default {
 </script>
 
 <style scoped>
+/* .area {
+    width: 105%;
+    position: relative;
+    top: -400rem;
+    z-index: -5;
+    height: 200vh;
+    border: 2px solid black;
+
+} */
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    width: 101%;
+    height: 970vh;
+    /* border: 2px solid black; */
+    overflow: hidden;
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 80px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+
+}
+
+.circles li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 110s;
+}
+
+.circles li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 110s;
+}
+
+.circles li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 110s;
+}
+
+.circles li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 110s;
+}
+
+.circles li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 110s;
+}
+
+.circles li:nth-child(11) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 10s;
+}
+
+
+.circles li:nth-child(12) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 120s;
+}
+
+.circles li:nth-child(13) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 14s;
+}
+
+.circles li:nth-child(14) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 100s;
+}
+
+.circles li:nth-child(15) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 10s;
+}
+
+@keyframes animate {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 10%;
+    }
+
+    50% {
+        transform: translateY(-7350px) rotate(370deg);
+        opacity: 1;
+        border-radius: 50%;
+    }
+
+    100% {
+        transform: translateY(-1100px) rotate(720deg);
+        opacity: 1;
+        border-radius: 100%;
+    }
+
+}
+
 #master {
     min-height: 100%;
     padding-top: 16rem;
-    padding-bottom: 16rem;
-    background: linear-gradient(15deg, #a529b9 19.9%, #50b1e1 95%);
+    padding-bottom: 20rem;
     overflow-x: hidden;
+    z-index: 10;
 }
 
 #ProjectCard {
@@ -171,7 +379,19 @@ export default {
     min-height: 50vh;
     padding: 1rem;
     margin: 2rem;
+    width: 80% !important;
     margin-top: 2rem;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    /* border: 1px solid black;    */
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 16px;
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    backdrop-filter: blur(10.7px);
+    -webkit-backdrop-filter: blur(10.7px);
+    transition: all 0.5s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 #TestimonialCards {
@@ -204,12 +424,9 @@ export default {
 }
 
 .contact-text {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 600;
-    background: #a529b9;
-    background: linear-gradient(to right, #a529b9 11%, #50b1e1 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: rgba(255, 255, 255, 0.741) !important;
 }
 
 .profile-image {
@@ -621,25 +838,39 @@ a:hover {
     }
 }
 
-@media only screen and (max-width: 350px){
-    .about-left{
+@media only screen and (max-width: 350px) {
+    .about-left {
         position: relative;
         right: 2rem;
     }
-    .gradient3{
+
+    .gradient3 {
         position: relative;
         left: 3rem;
     }
-      .profile-image{
+
+    .profile-image {
         position: relative;
         right: 2rem;
         width: 19rem;
         margin-bottom: -3rem;
-      }
+    }
 
-      .test-text{
+    .test-text {
         position: relative;
         bottom: 3rem;
-      }
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    #master {
+        height: 100vh;
+    }
+
+    .profile-image {
+        width: 30rem;
+        padding-top: 2rem;
+    }
+
 }
 </style>
